@@ -7,9 +7,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt # потрібна константа Qt.KeepAspectRatio для зміни розмірів із збереженням пропорцій
 from PyQt5.QtGui import QPixmap # оптимізована для показу на екрані картинка
-Наталя Кващишин14:20
-/
-Bandin14:20
+
 import os
 from PyQt5.QtWidgets import (
    QApplication, QWidget,
@@ -66,7 +64,7 @@ def filter(files, extensions):
            if filename.endswith(ext):
                result.append(filename)
    return result
-Bandin14:21
+
 def chooseWorkdir():
    global workdir
    workdir = QFileDialog.getExistingDirectory()
